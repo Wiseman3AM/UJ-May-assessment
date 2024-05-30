@@ -1,38 +1,146 @@
 {
-    "user" : {
-        "fullName" : "",
-        "photo" : "",
-        "phone" : "",
-        "email" : ""
+    "user": {
+        "fullName": "Amukelani Wiseman Mthombeni",
+        "photo": "images/1717059151307.JPG",
+        "phone": "079 108 2807",
+        "aPhone": "083 878 9046",
+        "gender": "Male",
+        "driversLicense": "code B",
+        "address": " 48 Thwane street, Atteridgeville, Pretoria, Gauteng",
+        "email": "Amukelani210@gmail.com"
     },
-    "education" : {
-        "institutionName" : "",
-        "photo" : "",
-        "description" : ""
+    "education": {
+        "qualification": [{
+                "institution": "Elandspoort Highschool/Hoerskool",
+                "name": "National Senior Certificate (NSC)",
+                "progress": "Completed",
+                "yearCompleted": "2019"
+            },
+
+            {
+                "institution": "University of Johannesburg",
+                "name": "BA in Public management and governance",
+                "progress": "Completed",
+                "yearCompleted": "2022"
+            },
+
+            {
+                "institution": "University of Johannesburg",
+                "name": "BcomHons in information management",
+                "progress": "Completed",
+                "yearCompleted": "2023"
+            },
+            {
+                "institution": "University of Johannesburg",
+                "name": "4IR Work Readiness programme",
+                "progress": "In progress",
+                "yearCompleted": "Expected 10/2024"
+            }
+        ]
+
     },
-    "foreignLanguage" : {
-        "language" : "",
-        "phrases" : [{
-            "englishPhrase" : "",
-            "foreignLanguage" : ""
+    "languages": [{
+            "language": "English",
+            "level": "Excellent"
         },
+
         {
-            "englishPhrase" : "",
-            "foreignLanguage" : ""
-        }]
-    },
-    "favouriteSubjects" : [
-        {
-            "name" : "",
-            "description" : ""
+            "language": "Xitsonga",
+            "level": "Excellent"
         },
+
         {
-            "name" : "",
-            "description" : ""
+            "language": "Sepedi",
+            "level": "Excellent"
         },
+
         {
-            "name" : "",
-            "description" : ""
+            "language": "Afrikaans",
+            "level": "Good"
         }
+    ],
+
+    "field": {
+        "specialisation": [{
+                "name": "Information Management"
+            },
+            {
+                "name": "Fullstack Web Development"
+            }, {
+                "name": "Software development"
+            },
+            {
+                "name": "Public management and governance"
+            },
+            {
+                "name": "Data analyst"
+            },
+            {
+                "name": "Competitive intelligence"
+            },
+            {
+                "name": "Business intelligence"
+            },
+            {
+                "name": "Electronic records management"
+            }
+        ]
+    },
+
+    "skills": {
+        "specialisation": [{
+                "name": "Backend development"
+            },
+            {
+                "name": "Frontend development"
+            }, {
+                "name": "HTML & CSS"
+            },
+            {
+                "name": "Machine learning"
+            },
+            {
+                "name": "Microsoft office"
+            },
+            {
+                "name": "Canva"
+            },
+            {
+                "name": "Search engine optimisation"
+            },
+            {
+                "name": "JavaScript"
+            }
+        ]
+    },
+
+    "experience": {
+        "work": [{
+                "name": "UJ/Accenture work readiness programme"
+            },
+            {
+                "name": "Studypool tutor"
+            },
+            {
+                "name": "Student Representitve Council Voluteer"
+            },
+            {
+                "name": "Marking assistant"
+            }
+        ]
+    },
+
+    "projects": [{
+            "name": "Responsive cat app",
+            "link": "CatApp"
+        },
+        {
+            "name": "Pizza pamphlet",
+            "link": "PizzaPamphlet"
+        },
+        {
+            "name": "My responsive webpage"
+        }
+
     ]
 }

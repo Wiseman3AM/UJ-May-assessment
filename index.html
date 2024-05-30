@@ -3,9 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="materialize.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Amukelani Mthombeni CV</title>
+    <style>
+
+
+    </style>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <div class="row intro">
+        <h2 class="col s12 l8">{{user.fullName}}</h2>
+        <img src="{{user.photo}}" alt="Picture of myself" class="col s12 l4 responsive-img circle" style="width: 200px; height: 200px; float: right;">
+    </div>
+
+    <div class="row contact">
+        <blockquote class="col s12 l4"></blockquoteclass>{{user.address}}</blockquote> 
+        <blockquote class="col s12 l2">{{user.phone}}</blockquote>  
+        <blockquote class="col s12 l2"></blockquoteclass>{{user.aPhone}}</blockquote> 
+        <blockquote class="col s12 l2"></blockquoteclass>{{user.email}}</blockquote>
+    </div>
+
+    <h2 class="col s12" style="background-color: #ff8a65;">EDUCATION</h2>
+<div class=" row educate">
+
+    <div class="col s12 l1 ed3">
+        <p>
+            Institution attended
+        </p>
+        <p>
+          Qualification  obtained
+        </p>
+        <p>
+            Progress
+        </p>
+        <p>
+            End date
+        </p>
+    </div>
+
+    <div class="col s12 l2  ed0"> 
+        <p>{{education.qualification.[0].institution}}</p> 
+        <p>{{education.qualification.[0].name}}</p>  
+        <p>{{education.qualification.[0].progress}}</p> 
+        <p>{{education.qualification.[0].yearCompleted}}</p> 
+    </div>
+    <div class="col s1"></div>
+    <div class="col s12 l2 ed1"> 
+        <p>{{education.qualification.[1].institution}}</p> 
+        <p>{{education.qualification.[1].name}}</p>  
+        <p>{{education.qualification.[1].progress}}</p> 
+        <p>{{education.qualification.[1].yearCompleted}}</p> 
+    </div>
+    <div class="col s1"></div>
+    <div class="col s12 l2 ed2"> 
+        <p>{{education.qualification.[2].institution}}</p> 
+        <p>{{education.qualification.[2].name}}</p>  
+        <p>{{education.qualification.[2].progress}}</p> 
+        <p>{{education.qualification.[2].yearCompleted}}</p> 
+    </div>
+    <div class="col s1"></div>
+
+    <div class="col s12 l2 ed3"> 
+        <p>{{education.qualification.[3].institution}}</p> 
+        <p>{{education.qualification.[3].name}}</p>  
+        <p>{{education.qualification.[3].progress}}</p> 
+        <p>{{education.qualification.[3].yearCompleted}}</p> 
+    </div>
+</div>
+
+<div>
+    <h2 class="col s12" style="background-color: #ffcdd2;">LANGUAGES</h2>
+    <div class="row">
+<p class="col s12 l2 ed0">
+    {{languages.[0].language}} : {{languages.[0].level}}
+</p>
+<div class="col s1"></div>
+
+<p class="col s12 l2 ed1">
+    {{languages.[1].language}} : {{languages.[1].level}}
+</p>
+<div class="col s1"></div>
+
+<p class="col s12 l2 ed2">
+    {{languages.[2].language}} : {{languages.[2].level}}
+</p>
+
+<div class="col s1"></div>
+
+<p class="col s12 l2 ed3">
+    {{languages.[3].language}} : {{languages.[3].level}}
+</p>
+</div>
+</div>
+
+<div class="row">
+    <div class="col s12 l3 ed0">
+    <h2>Field</h2>
+    <ul>
+        {{#each field.specialisation}}
+        <li>{{this.name}}</li>
+        {{/each}}
+    </ul>
+
+</div>
+
+<div class="col s1"></div>
+
+<div class="col s12 l3 ed1">
+    <h2>Skills</h2>
+    <ul>
+        {{#each skills.specialisation}}
+        <li>{{this.name}}</li>
+        {{/each}}
+    </ul>
+</div>
+
+<div class="col s1"></div>
+
+<div class="col s12 l3 ed0">
+    <h2>Experience</h2>
+    <ul>
+        {{#each experience.work}}
+        <li>{{this.name}}</li>
+        {{/each}}
+    </ul>
+</div>
+</div>
+
+<div>
+    <h2 class="col s12" style="background-color: #ff8a65;">Projects</h2>
+    <p><a href ="https://wiseman3am.github.io/basic-website/">{{projects.[0].name}}</a></p>
+    <p><a href ="">{{projects.[1].name}}</a> </p>
+    <p><a href ="">{{projects.[2].name}}</a> </p>
+</div>
+        
+
+<div>
+    <footer>
+        <p><a href ="https://www.linkedin.com/in/amukelani-mthombeni-760b64233?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a></p>
+    </footer>
+
+</div>
+    
 </body>
 </html>
