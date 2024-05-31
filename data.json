@@ -1,7 +1,7 @@
 {
     "user": {
         "fullName": "Amukelani Wiseman Mthombeni",
-        "photo": "images/1717059151307.JPG",
+        "photo": "./images/1717059151307.JPG",
         "phone": "079 108 2807",
         "aPhone": "083 878 9046",
         "gender": "Male",
@@ -11,7 +11,7 @@
     },
     "education": {
         "qualification": [{
-                "institution": "Elandspoort Highschool/Hoerskool",
+                "institution": "Elandspoort Highschool",
                 "name": "National Senior Certificate (NSC)",
                 "progress": "Completed",
                 "yearCompleted": "2019"
