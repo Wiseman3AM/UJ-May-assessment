@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,146 +8,173 @@
     <link rel="stylesheet" href="./style.css">
     <title>Amukelani Mthombeni CV</title>
     <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
         @media only screen and (min-width: 720px) {
 
-.educate,
-.exp {
-    display: flex;
-}
-}
-
+            .educate,
+            .exp {
+                display: flex;
+            }
+        }
     </style>
 </head>
+
 <body>
+    <div class="content">
     <div class="row intro">
         <h2 class="col s12 l8">{{user.fullName}}</h2>
-        <img src="{{user.photo}}" alt="Picture of myself" class="col s12 l4 responsive-img circle" style="width: 200px; height: 200px; float: right;">
+        <img src="{{user.photo}}" alt="Picture of myself" class="col s12 l4 responsive-img circle"
+            style="width: 200px; height: 200px; float: right;">
     </div>
 
     <div class="row educate">
-        <blockquote class="col s12 l4"><p>Address:</p><p>{{user.address}}</p></blockquote> 
-        <blockquote class="col s12 l2"><p>Contact number:</p><p>{{user.phone}}</p></blockquote>  
-        <blockquote class="col s12 l2"><p>Alternative contact number:</p><p>{{user.aPhone}}</p></blockquote> 
-        <blockquote class="col s12 l2"><p>Email address:</p><p>{{user.email}}</p></blockquote>
-        <blockquote class="col s12 l2"><p>LinkedIn</p><p><a href ="https://www.linkedin.com/in/amukelani-mthombeni-760b64233?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="./images/linkedin.png" alt="LinkedIn icon" width="25px"></a></p></blockquote>
+        <blockquote class="col s12 l4">
+            <p>Address:</p>
+            <p>{{user.address}}</p>
+        </blockquote>
+        <blockquote class="col s12 l2">
+            <p>Contact number:</p>
+            <p>{{user.phone}}</p>
+        </blockquote>
+        <blockquote class="col s12 l2">
+            <p>Alternative contact number:</p>
+            <p>{{user.aPhone}}</p>
+        </blockquote>
+        <blockquote class="col s12 l2">
+            <p>Email address:</p>
+            <p>{{user.email}}</p>
+        </blockquote>
+        <blockquote class="col s12 l2">
+            <p>LinkedIn</p>
+            <p><a
+                    href="https://www.linkedin.com/in/amukelani-mthombeni-760b64233?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img
+                        src="./images/linkedin.png" alt="LinkedIn icon" width="25px"></a></p>
+        </blockquote>
     </div>
 
     <h2 class="col s12" style="background-color:  #d4a373;">EDUCATION</h2>
-<div class=" row educate">
+    <div class=" row educate">
 
-    <div class="col s12 l3  ed0"> 
-        <h5>{{education.qualification.[0].institution}}</h5>
-        <dt> 
-        <li>{{education.qualification.[0].name}}</li>  
-        <li>{{education.qualification.[0].progress}}</li> 
-        <li>{{education.qualification.[0].yearCompleted}}</li>
-    </dt> 
-    </div>
-    
-    <div class="col s12 l3 ed1"> 
-        <h5>{{education.qualification.[1].institution}}</h5>
-        <dt> 
-        <li>{{education.qualification.[1].name}}</li>  
-        <li>{{education.qualification.[1].progress}}</li> 
-        <li>{{education.qualification.[1].yearCompleted}}</li> 
-    </dt>
-    </div>
-    
-    <div class="col s12 l3 ed2"> 
-        <h5>{{education.qualification.[2].institution}}</h5>
-        <dt> 
-        <li>{{education.qualification.[2].name}}</li>  
-        <li>{{education.qualification.[2].progress}}</li> 
-        <li>{{education.qualification.[2].yearCompleted}}</li> 
-    </dt>
-    </div>
-    
+        <div class="col s12 l3  ed0">
+            <h5>{{education.qualification.[0].institution}}</h5>
+            <dt>
+                <li>{{education.qualification.[0].name}}</li>
+                <li>{{education.qualification.[0].progress}}</li>
+                <li>{{education.qualification.[0].yearCompleted}}</li>
+            </dt>
+        </div>
 
-    <div class="col s12 l3 ed3"> 
-        <h5>{{education.qualification.[3].institution}}</h5> 
-        <dt>
-        <li>{{education.qualification.[3].name}}</li>  
-        <li>{{education.qualification.[3].progress}}</li> 
-        <li>{{education.qualification.[3].yearCompleted}}</li> 
-    </dt>
-    </div>
-</div>
+        <div class="col s12 l3 ed1">
+            <h5>{{education.qualification.[1].institution}}</h5>
+            <dt>
+                <li>{{education.qualification.[1].name}}</li>
+                <li>{{education.qualification.[1].progress}}</li>
+                <li>{{education.qualification.[1].yearCompleted}}</li>
+            </dt>
+        </div>
 
-<div>
-    <h2 class="col s12" style="background-color:  #d4a373;">LANGUAGES</h2>
+        <div class="col s12 l3 ed2">
+            <h5>{{education.qualification.[2].institution}}</h5>
+            <dt>
+                <li>{{education.qualification.[2].name}}</li>
+                <li>{{education.qualification.[2].progress}}</li>
+                <li>{{education.qualification.[2].yearCompleted}}</li>
+            </dt>
+        </div>
+
+
+        <div class="col s12 l3 ed3">
+            <h5>{{education.qualification.[3].institution}}</h5>
+            <dt>
+                <li>{{education.qualification.[3].name}}</li>
+                <li>{{education.qualification.[3].progress}}</li>
+                <li>{{education.qualification.[3].yearCompleted}}</li>
+            </dt>
+        </div>
+    </div>
+
+    <div>
+        <h2 class="col s12" style="background-color:  #d4a373;">LANGUAGES</h2>
+        <div class="row">
+            <p class="col s12 l2 ed0">
+                {{languages.[0].language}} : {{languages.[0].level}}
+            </p>
+            <div class="col s1"></div>
+
+            <p class="col s12 l2 ed1">
+                {{languages.[1].language}} : {{languages.[1].level}}
+            </p>
+            <div class="col s1"></div>
+
+            <p class="col s12 l2 ed2">
+                {{languages.[2].language}} : {{languages.[2].level}}
+            </p>
+
+            <div class="col s1"></div>
+
+            <p class="col s12 l2 ed3">
+                {{languages.[3].language}} : {{languages.[3].level}}
+            </p>
+        </div>
+    </div>
+
     <div class="row">
-<p class="col s12 l2 ed0">
-    {{languages.[0].language}} : {{languages.[0].level}}
-</p>
-<div class="col s1"></div>
+        <div>
+            <h2 style="background-color:  #d4a373;">EXPERIENCE</h2>
+        </div>
+        <div class="exp">
+            <div class="col s12 l3 ed0">
+                <h4>Field</h4>
+                <ol>
+                    {{#each field.specialisation}}
+                    <li>{{this.name}}</li>
+                    {{/each}}
+                </ol>
 
-<p class="col s12 l2 ed1">
-    {{languages.[1].language}} : {{languages.[1].level}}
-</p>
-<div class="col s1"></div>
+            </div>
 
-<p class="col s12 l2 ed2">
-    {{languages.[2].language}} : {{languages.[2].level}}
-</p>
+            <div class="col s1"></div>
 
-<div class="col s1"></div>
+            <div class="col s12 l3 ed1">
+                <h4>Skills</h4>
+                <ol>
+                    {{#each skills.specialisation}}
+                    <li>{{this.name}}</li>
+                    {{/each}}
+                </ol>
+            </div>
 
-<p class="col s12 l2 ed3">
-    {{languages.[3].language}} : {{languages.[3].level}}
-</p>
-</div>
-</div>
+            <div class="col s1"></div>
 
-<div class="row">
-    <div><h2 style="background-color:  #d4a373;">EXPERIENCE</h2></div>
-    <div class="exp">
-    <div class="col s12 l3 ed0">
-    <h4>Field</h4>
-    <ol>
-        {{#each field.specialisation}}
-        <li>{{this.name}}</li>
-        {{/each}} 
-    </ol>
+            <div class="col s12 l3 ed0">
+                <h4>Experience</h4>
+                <ol>
+                    {{#each experience.work}}
+                    <li>{{this.name}}</li>
+                    {{/each}}
+                </ol>
+            </div>
+        </div>
+    </div>
 
-</div>
+    <div>
+        <h2 class="col s12" style="background-color:  #d4a373;">Projects</h2>
+        <p><a href="https://wiseman3am.github.io/perfect-pizza/">{{projects.[1].name}}</a></p>
+        <p><a href="https://wiseman3am.github.io/basic-website/">{{projects.[2].name}}</a></p>
+    </div>
 
-<div class="col s1"></div>
-
-<div class="col s12 l3 ed1">
-    <h4>Skills</h4>
-    <ol>
-        {{#each skills.specialisation}}
-        <li>{{this.name}}</li>
-        {{/each}}
-    </ol>
-</div>
-
-<div class="col s1"></div>
-
-<div class="col s12 l3 ed0">
-    <h4>Experience</h4>
-    <ol>
-        {{#each experience.work}}
-        <li>{{this.name}}</li>
-        {{/each}}
-    </ol>
-</div>
-</div>
 </div>
 
-<div>
-    <h2 class="col s12" style="background-color:  #d4a373;">Projects</h2>
-    <p><a href ="https://wiseman3am.github.io/perfect-pizza/">{{projects.[1].name}}</a></p>
-    <p><a href ="https://wiseman3am.github.io/basic-website/">{{projects.[2].name}}</a></p>
-</div>
-        
+    <section>
 
-<section>
-    
-    <footer style="background-color: #d4a373;">
-        <p></p>
-        
-    </footer>
-</section>
+        <footer style="background-color: #d4a373;">
+            <p></p>
+
+        </footer>
+    </section>
 </body>
+
 </html>
