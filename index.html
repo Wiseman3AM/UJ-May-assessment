@@ -13,7 +13,50 @@
             font-size: medium;
         }
 
-        @media screen and (min-width: 720px) {
+        h1, h2, h3, h4, h5,p{
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        @media only screen and (max-width: 282px) {
+            p, dt, ol{
+                font-size: p-small;
+        
+            }
+
+            h1, h2, h3, h4, h5{
+                font-size:x-small;
+            }
+        }
+       
+        @media only screen and (max-width: 300px) {
+            p, ol, dt{
+                font-size: small;
+        
+            }
+
+            h1, h2, h3, h4, h5{
+                font-size: smaller;
+            }
+            p{
+                font-size: x-small;
+            }
+        }
+
+        
+        @media only screen and (max-width: 400px) {
+            p, dt, ol{
+                font-size: small;
+        
+            }
+
+            h1, h2, h3, h4, h5{
+                font-size: x-large;
+            }
+        }
+
+
+
+        @media only screen and (min-width: 720px) {
 
             .educate,
             .exp {
@@ -60,7 +103,7 @@
     <div class=" row educate">
 
         <div class="col s12 l3  ed0">
-            <h5>{{education.qualification.[0].institution}}</h5>
+            <strong><p>{{education.qualification.[0].institution}}</p></strong>
             <dt>
                 <li>{{education.qualification.[0].name}}</li>
                 <li>{{education.qualification.[0].progress}}</li>
@@ -69,7 +112,7 @@
         </div>
 
         <div class="col s12 l3 ed1">
-            <h5>{{education.qualification.[1].institution}}</h5>
+            <strong><p>{{education.qualification.[1].institution}}</p></strong>
             <dt>
                 <li>{{education.qualification.[1].name}}</li>
                 <li>{{education.qualification.[1].progress}}</li>
@@ -78,7 +121,7 @@
         </div>
 
         <div class="col s12 l3 ed2">
-            <h5>{{education.qualification.[2].institution}}</h5>
+            <strong><p>{{education.qualification.[2].institution}}</p></strong>
             <dt>
                 <li>{{education.qualification.[2].name}}</li>
                 <li>{{education.qualification.[2].progress}}</li>
@@ -88,7 +131,7 @@
 
 
         <div class="col s12 l3 ed3">
-            <h5>{{education.qualification.[3].institution}}</h5>
+            <strong><p>{{education.qualification.[3].institution}}</p></strong>
             <dt>
                 <li>{{education.qualification.[3].name}}</li>
                 <li>{{education.qualification.[3].progress}}</li>
@@ -98,7 +141,7 @@
     </div>
 
     <div>
-        <h2 class="col s12" style="background-color:  #d4a373;">LANGUAGES</h2>
+        <h3 class="col s12" style="background-color:  #d4a373;">LANGUAGES</h3>
         <div class="row">
             <p class="col s12 l2 ed0">
                 {{languages.[0].language}} : {{languages.[0].level}}
